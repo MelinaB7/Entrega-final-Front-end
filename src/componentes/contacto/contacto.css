@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+h2, p {
+  margin-bottom: 10px;
+  font-family: "Rubik", sans-serif;
+}
+
+.masInfo {
+  margin-top: 10px;
+  align-items: center;
+}
+
+.imagen {
+  max-width: 100%;
+  height: auto;
+}
+.plan{
+  margin:15px;
+  padding: 25px;
+
+}
+.tarjeta{
+  margin:10px;
+  align-items: center;
+  
+}
+
+.carousel-container {
+  width: 100%;
+  max-width: 1000px !important; 
+  margin: 0 auto; 
+}
+.carousel-caption p {
+  color: black; 
+  font-family: "Rubik", sans-serif;
+}
+
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: black; 
+    border-radius: 50%; 
+    width: 30px; 
+    height: 30px; 
+  }
+  

@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+.Navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 1rem;
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.NavbarLi{
+    list-style: none;
+    display: inline;
+    margin: 1rem;
+    font-family: "Rubik", sans-serif;
+
+}
+.nombreEmpresa{
+color: white !important;
+margin: 1rem;
+
+font-family: "Rubik", sans-serif;
+}
