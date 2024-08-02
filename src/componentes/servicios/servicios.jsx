@@ -30,43 +30,38 @@ const manejarBorrarComentario = (index) => {
 };
 
 return (
-  <div>
-
-<h1 className='titulo'> Dinos que necesita tu web</h1>
-<p className='parrafo'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit corrupti laborum fugiat aperiam quibusdam perferendis delectus aspernatur accusantium deserunt, praesentium magnam consectetur, at veritatis dolorum a quas nesciunt voluptatem quia!</p>
-<img src={ideas} className='imagen'></img>
-    <h2 className='titulo2'> Escribe tu Comentario </h2>
-    <div className='inputConteiner'>
-    <input
-      type="text"
-      value={nuevoComentario}
-      onChange={manejarCambioInput}
-      placeholder="Escribe tu comentario"
-    />
- <button className='botonAgregar' onClick={manejarAgregarComentario}>Agregar</button>
-   
+  <div className="servicios-container">
+      <h1 className='titulo'>Dinos qué necesita tu web</h1>
+      <p className='parrafo'>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit corrupti laborum fugiat aperiam quibusdam perferendis delectus aspernatur accusantium deserunt, praesentium magnam consectetur, at veritatis dolorum a quas nesciunt voluptatem quia!
+      </p>
+      <img src={ideas} className='imagen' alt="Ideas" />
+      <h2 className='titulo2'>Escribe tu Comentario</h2>
+      <div className='input-container'>
+        <input
+          type="text"
+          value={nuevoComentario}
+          onChange={manejarCambioInput}
+          placeholder="Escribe tu comentario"
+        />
+        <button className='boton-agregar' onClick={manejarAgregarComentario}>Agregar</button>
+      </div>
+      <ul className='comentarios-lista'>
+        {comentario.map((comentario, index) => (
+          <li key={index}>
+            {comentario}
+            <button className='boton-eliminar' onClick={() => manejarBorrarComentario(index)}>Eliminar</button>
+          </li>
+        ))}
+      </ul>
+      <div className='div-boton'>
+        <h2>Por más información, déjanos tu consulta y nos comunicaremos</h2>
+        <button className='boton-info' onClick={() => window.location.href = '/nosotros'}>
+          Quiero más información
+        </button>
+      </div>
     </div>
-    <ul>
-      {comentario.map((comentario, index) => (
-        <li key={index}>
-          {comentario}
-          <button onClick={() => manejarBorrarComentario(index)}>Eliminar</button>
-        </li>
-      ))}
-    </ul>
-    <div className='divBoton'>
-  <h2>Por mas informacion, dejarnos tu consulta y nos comunicaremos</h2>
-  <Button
-              as={Link}
-              to="/nosotros"
-              variant="warning"
-              className="masInfo"
-            >
-              Quiero mas información
-            </Button>
-</div>
-  </div>
-);
+  );
 };
 
 export default Servicios;

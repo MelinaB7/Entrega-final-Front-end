@@ -1,41 +1,93 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-.Nosotros{
-    text-align: center;
-    }
-.titulo{
-padding: 15px;
-font-family: "Rubik", sans-serif;
-}
-.imagen{
-width:500px;
-height: 400px;
-}
-p{
-    padding: 15px;
-    font-family: "Rubik", sans-serif;
-}
-h2{
-    padding: 20px;
-    font-family: "Rubik", sans-serif;
-}
-.form-container{
-    display: inline-block;
-    align-items: center;
-    padding: 20px;
-    margin: 0;
 
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Elimina el desplazamiento horizontal */
+  font-family: "Rubik", sans-serif;
 }
 
-.form-group{
-    margin-bottom: 15px;
-    font-family: "Rubik", sans-serif;
+.container {
+  max-width: 1200px; /* Ajusta según el ancho deseado */
+  margin: 0 auto;
+  padding: 20px;
 }
-label{
-    font-family: "Rubik", sans-serif;
-    color: black;
+
+.header {
+  text-align: center;
 }
-input, textarea {
-    width: 100%; 
-    padding: 10px; 
-    border-radius: 4px; 
-  }
+
+.titulo {
+  padding: 10px;
+  font-family: "Rubik", sans-serif;
+  color: black;
+}
+
+.content {
+  margin-bottom: 40px;
+}
+
+.image-container {
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.imagen {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  padding: 15px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+h2 {
+  padding: 20px;
+  text-align: center;
+}
+
+.form-section {
+  margin-top: 40px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  width: 100%;
+  max-width: 600px; /* Ajusta según el ancho deseado */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 4px;
+  background-color: #007bff !important;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: violet !important;
+}

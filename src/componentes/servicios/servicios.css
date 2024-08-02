@@ -1,77 +1,110 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+.servicios-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 .titulo {
-  padding: 15px;
-  margin: 20px;
+  font-size: 2rem;
+  color: black;
   text-align: center;
-  font-family: "Rubik", sans-serif;
 }
-.titulo2 {
+
+.parrafo {
+  font-size: 1rem;
   text-align: center;
-  margin: 25px;
-  font-family: "Rubik", sans-serif;
-}
-.parrafo{
-  text-align: center;
+  margin: 20px 0;
 }
 
 .imagen {
+  display: block;
+  margin: 20px auto;
   max-width: 100%;
   height: auto;
-  align-items: center;
-  margin-left: 15%;
-  margin-right: 15%;
 }
 
-input {
-  padding: 20px;
-  margin: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background-color: white;
-  color: black;
-  align-items: center;
+.titulo2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 20px 0;
 }
-.inputConteiner {
+
+.input-container {
   display: flex;
-  align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
-.botonAgregar {
-  padding: 10px 15px;
-  margin: 10px;
-  background-color: black;
-  color: #fff;
+input[type="text"] {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  flex: 1;
+}
+
+.boton-agregar {
+  padding: 10px 20px;
   border: none;
   border-radius: 4px;
+  background-color: #28a745;
+  color: white;
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #0056b3;
+.boton-agregar:hover {
+  background-color: #218838;
 }
 
-ul {
+.comentarios-lista {
   list-style-type: none;
   padding: 0;
 }
 
-li {
-  margin: 5px 0;
-  padding: 10px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+.comentarios-lista li {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
 }
-.divBoton, .masInfo{
-display: flex;
-align-items: center;
-margin: 20px;
-  
+
+.boton-eliminar {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #dc3545;
+  color: white;
+  cursor: pointer;
+}
+
+.boton-eliminar:hover {
+  background-color: #c82333;
+}
+
+.div-boton {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.boton-info {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ffc107;
+  color: black;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.boton-info:hover {
+  background-color: #e0a800;
 }

@@ -14,6 +14,7 @@ h2, p {
 .imagen {
   max-width: 100%;
   height: auto;
+  text-align: center;
 }
 .plan{
   margin:15px;
