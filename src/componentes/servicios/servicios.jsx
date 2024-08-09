@@ -1,7 +1,6 @@
 import React,{ useState, useEffect } from 'react';
 import './servicios.css';
 import ideas from '../../assets/imagenes/ideas.png';
-import  Button from "react-bootstrap/Button";
 import { Link } from 'react-router-dom';
 
 
@@ -56,6 +55,7 @@ return (
       </ul>
       <div className='div-boton'>
         <h2>Por más información, déjanos tu consulta y nos comunicaremos</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum sit qui, labore molestiae perspiciatis quasi rerum ullam ratione, velit ipsam atque! Modi iure laborum nobis aut itaque ullam. Quibusdam, alias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, dolor itaque. Facilis nisi veritatis officiis, quas corrupti nemo, architecto odio atque reprehenderit quaerat impedit explicabo placeat, fugit ipsa vitae dolore!</p>
         <button className='boton-info' onClick={() => window.location.href = '/nosotros'}>
           Quiero más información
         </button>

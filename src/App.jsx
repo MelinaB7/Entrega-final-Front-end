@@ -6,6 +6,7 @@ import Navbar from "./componentes/navbar/navbar";
 import Footer from "./componentes/footer/footer";
 import Nosotros from "./componentes/nosotros/nosotros";
 import Servicios from "./componentes/servicios/servicios";
+import DatosApi from './componentes/datosApi/datosApi';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
@@ -27,6 +28,7 @@ function App() {
 
           
         </Routes>
+        <DatosApi /> 
         <Footer />
       </div>
     </Router>
