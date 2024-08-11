@@ -2,16 +2,16 @@ import React, { useState } from 'react';
 import './datosApi.css';
 
 const DatosApi = () => {
-  const [datos, setDatos] = useState(null); // Estado para almacenar los datos
+  const [datos, setDatos] = useState(null); 
 
-  // Función para hacer la llamada a la API
+
   const obtenerDatos = async () => {
     try {
-      const respuesta = await fetch('https://criptoya.com/api/dolar'); // URL de la API
-      const datos = await respuesta.json(); // Parsear los datos a JSON
-      setDatos(datos.blue); // Actualizar el estado con los datos obtenidos
+      const respuesta = await fetch('https://criptoya.com/api/dolar'); 
+      const datos = await respuesta.json(); 
+      setDatos(datos.blue); 
     } catch (error) {
-      console.error('Error al obtener los datos:', error); // Manejar errores
+      console.error('Error al obtener los datos:', error); 
     }
   };
 

@@ -4,12 +4,12 @@
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Elimina el desplazamiento horizontal */
+  overflow-x: hidden;
   font-family: "Rubik", sans-serif;
 }
 
 .container {
-  max-width: 1200px; /* Ajusta según el ancho deseado */
+  max-width: 1200px; 
   margin: 0 auto;
   padding: 20px;
 }
@@ -60,7 +60,7 @@ h2 {
 
 form {
   width: 100%;
-  max-width: 600px; /* Ajusta según el ancho deseado */
+  max-width: 600px; 
 }
 
 .form-group {
