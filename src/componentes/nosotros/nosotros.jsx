@@ -32,7 +32,7 @@ function Nosotros() {
   };
 
   return (
-    <div className="container">
+    <div className="container-fluid">
       <header className="header">
         <h1 className='titulo'>Sobre Nosotros</h1>
       </header>

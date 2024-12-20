@@ -30,7 +30,7 @@ const manejarBorrarComentario = (index) => {
 };
 
 return (
-  <div className="servicios-container">
+  <div className="container-fluid">
       <h1 className='titulo'>Dinos qué necesita tu web</h1>
       <p className='parrafo'>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit corrupti laborum fugiat aperiam quibusdam perferendis delectus aspernatur accusantium deserunt, praesentium magnam consectetur, at veritatis dolorum a quas nesciunt voluptatem quia!
